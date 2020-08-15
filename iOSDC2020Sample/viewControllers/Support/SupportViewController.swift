@@ -12,25 +12,16 @@ class SupportViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
-    #if STUDENT
-    private let menus: [SupportMenu] = [
-        SupportMenu(title: "通知設定"),
-        SupportMenu(title: "夏休みのスケジュール"),
-        SupportMenu(title: "おすすめの自由研究一覧"),
-        SupportMenu(title: "先生への質問フォーム")
-    ]
-    #elseif TEACHER
-    private let menus: [SupportMenu] = [
-        SupportMenu(title: "通知設定"),
-        SupportMenu(title: "夏休みのスケジュール"),
-        SupportMenu(title: "課題作成時のルール"),
-        SupportMenu(title: "成績管理表")
-    ]
-    #endif
+    private var currentUser: User!
     
+    private var menus: [SupportMenu] {
+        currentUser.getUserType().menus
+    }
     
-    static func get() -> SupportViewController {
-        return UIStoryboard(name: "Support", bundle: nil).instantiateInitialViewController() as! SupportViewController
+    static func get(currentUser: User) -> SupportViewController {
+        let vc = UIStoryboard(name: "Support", bundle: nil).instantiateInitialViewController() as! SupportViewController
+        vc.currentUser = currentUser
+        return vc
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

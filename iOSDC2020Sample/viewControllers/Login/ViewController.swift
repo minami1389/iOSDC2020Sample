@@ -36,12 +36,12 @@ class ViewController: UIViewController {
         case let student as StudentUser:
             return [
                 UINavigationController(rootViewController: HomeworkListViewController.get(student: student, currentUser: student)),
-                UINavigationController(rootViewController: SupportViewController.get())
+                UINavigationController(rootViewController: SupportViewController.get(currentUser: student))
             ]
         case let teacher as TeacherUser:
             return [
                 UINavigationController(rootViewController: StudentListViewController.get(teacher: teacher)),
-                UINavigationController(rootViewController: SupportViewController.get())
+                UINavigationController(rootViewController: SupportViewController.get(currentUser: teacher))
             ]
         default:
             fatalError("")

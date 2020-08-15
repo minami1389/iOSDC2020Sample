@@ -23,4 +23,17 @@ struct StudentUser: User {
     let name: String
 }
 
+extension User {
+    func getUserType() -> UserType {
+        switch self {
+        case is StudentUser:
+            return UserType.student
+        case is TeacherUser:
+            return UserType.teacher
+        default:
+            fatalError("")
+        }
+    }
+}
+
 

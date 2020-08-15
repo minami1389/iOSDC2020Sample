@@ -15,11 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        #if STUDENT
-        loginButton.setTitle("生徒用ログイン", for: .normal)
-        #elseif TEACHER
-        loginButton.setTitle("先生用ログイン", for: .normal)
-        #endif
+        loginButton.setTitle(UserType.current.loginButtonTitle, for: .normal)
     }
 
     @IBAction func onTapLoginButton(_ sender: Any) {

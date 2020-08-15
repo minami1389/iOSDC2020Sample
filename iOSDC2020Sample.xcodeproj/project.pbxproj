@@ -21,6 +21,7 @@
 		06002ACE24E2DA6D0085AD13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06002ACD24E2DA6D0085AD13 /* User.swift */; };
 		06A0432F24E7CF6500F36385 /* Info-Student.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06A0432D24E7CF6500F36385 /* Info-Student.plist */; };
 		06A0433024E7CF6500F36385 /* Info-Teacher.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06A0432E24E7CF6500F36385 /* Info-Teacher.plist */; };
+		06A0433424E7E1DE00F36385 /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A0433324E7E1DE00F36385 /* UserType.swift */; };
 		06D4F1D524CCAD4C00AC922C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4F1D424CCAD4C00AC922C /* AppDelegate.swift */; };
 		06D4F1D724CCAD4C00AC922C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4F1D624CCAD4C00AC922C /* SceneDelegate.swift */; };
 		06D4F1D924CCAD4C00AC922C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4F1D824CCAD4C00AC922C /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		06002ACD24E2DA6D0085AD13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		06A0432D24E7CF6500F36385 /* Info-Student.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Student.plist"; sourceTree = "<group>"; };
 		06A0432E24E7CF6500F36385 /* Info-Teacher.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Teacher.plist"; sourceTree = "<group>"; };
+		06A0433324E7E1DE00F36385 /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 		06D4F1D124CCAD4C00AC922C /* iOSDC2020Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDC2020Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D4F1D424CCAD4C00AC922C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06D4F1D624CCAD4C00AC922C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				06002ACD24E2DA6D0085AD13 /* User.swift */,
 				06F5B69D24E7BC86003D8537 /* Homework.swift */,
 				06F5B69F24E7C493003D8537 /* SupportMenu.swift */,
+				06A0433324E7E1DE00F36385 /* UserType.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				06002AC024E18D970085AD13 /* CreateHomeworkViewController.swift in Sources */,
 				06002AB424E18D580085AD13 /* StudentListViewController.swift in Sources */,
+				06A0433424E7E1DE00F36385 /* UserType.swift in Sources */,
 				06002AC624E18DA80085AD13 /* HomeworkDetailViewController.swift in Sources */,
 				06002ACA24E2D92C0085AD13 /* APIClient.swift in Sources */,
 				06D4F1D924CCAD4C00AC922C /* ViewController.swift in Sources */,

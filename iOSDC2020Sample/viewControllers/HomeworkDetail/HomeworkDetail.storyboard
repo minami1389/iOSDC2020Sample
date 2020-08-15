@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uXf-8C-BYw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Homework Detail View Controller-->
+        <scene sceneID="jpt-d9-hLd">
+            <objects>
+                <viewController id="uXf-8C-BYw" customClass="HomeworkDetailViewController" customModule="iOSDC2020Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eqM-Tm-m28">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edI-v4-3Mj">
+                                <rect key="frame" x="30" y="74" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-QG-jCf">
+                                <rect key="frame" x="153" y="124.5" width="108" height="30"/>
+                                <state key="normal" title="課題を完了する"/>
+                                <connections>
+                                    <action selector="onTapCompleteButton:" destination="uXf-8C-BYw" eventType="touchUpInside" id="bK7-8K-D9G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gdi-QG-jCf" firstAttribute="top" secondItem="edI-v4-3Mj" secondAttribute="bottom" constant="30" id="PgM-w3-bvK"/>
+                            <constraint firstItem="edI-v4-3Mj" firstAttribute="top" secondItem="9Cf-Fj-Awn" secondAttribute="top" constant="30" id="feg-YK-rSV"/>
+                            <constraint firstItem="edI-v4-3Mj" firstAttribute="leading" secondItem="9Cf-Fj-Awn" secondAttribute="leading" constant="30" id="lSI-iW-m2n"/>
+                            <constraint firstItem="9Cf-Fj-Awn" firstAttribute="trailing" secondItem="edI-v4-3Mj" secondAttribute="trailing" constant="30" id="o8M-rt-tKJ"/>
+                            <constraint firstItem="Gdi-QG-jCf" firstAttribute="centerX" secondItem="eqM-Tm-m28" secondAttribute="centerX" id="zuT-ma-iF8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Cf-Fj-Awn"/>
+                    </view>
+                    <connections>
+                        <outlet property="completeButton" destination="Gdi-QG-jCf" id="Owm-6h-U5e"/>
+                        <outlet property="descriptionLabel" destination="edI-v4-3Mj" id="kvA-2P-LWx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myK-Eq-SXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="135"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tHO-0n-nEe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--課題作成-->
+        <scene sceneID="kFi-gn-hJR">
+            <objects>
+                <viewController title="課題作成" id="tHO-0n-nEe" customClass="CreateHomeworkViewController" customModule="iOSDC2020Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFf-Eo-tHC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbO-ig-JZE">
+                                <rect key="frame" x="30" y="74" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-Ob-ZYy">
+                                <rect key="frame" x="30" y="138" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4l-8O-ZFz">
+                                <rect key="frame" x="191.5" y="222" width="31" height="30"/>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="onTapAddButton:" destination="tHO-0n-nEe" eventType="touchUpInside" id="Rrr-Pp-xjO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9II-kq-3Uk" firstAttribute="trailing" secondItem="FRi-Ob-ZYy" secondAttribute="trailing" constant="30" id="AOb-Rm-MYJ"/>
+                            <constraint firstItem="a4l-8O-ZFz" firstAttribute="top" secondItem="FRi-Ob-ZYy" secondAttribute="bottom" constant="50" id="L1s-Is-UaR"/>
+                            <constraint firstItem="FRi-Ob-ZYy" firstAttribute="leading" secondItem="9II-kq-3Uk" secondAttribute="leading" constant="30" id="NR2-B6-9J2"/>
+                            <constraint firstItem="dbO-ig-JZE" firstAttribute="leading" secondItem="9II-kq-3Uk" secondAttribute="leading" constant="30" id="Q3Y-r8-05g"/>
+                            <constraint firstItem="dbO-ig-JZE" firstAttribute="top" secondItem="9II-kq-3Uk" secondAttribute="top" constant="30" id="et4-o2-gLZ"/>
+                            <constraint firstItem="9II-kq-3Uk" firstAttribute="trailing" secondItem="dbO-ig-JZE" secondAttribute="trailing" constant="30" id="fnW-hg-QRr"/>
+                            <constraint firstItem="FRi-Ob-ZYy" firstAttribute="top" secondItem="dbO-ig-JZE" secondAttribute="bottom" constant="30" id="xHL-Dz-5gi"/>
+                            <constraint firstItem="a4l-8O-ZFz" firstAttribute="centerX" secondItem="hFf-Eo-tHC" secondAttribute="centerX" id="yux-e5-re7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9II-kq-3Uk"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="a4l-8O-ZFz" id="Oei-4e-QMb"/>
+                        <outlet property="descriptionTextField" destination="FRi-Ob-ZYy" id="UO0-Gv-i1n"/>
+                        <outlet property="titleTextField" destination="dbO-ig-JZE" id="zI1-do-laF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oya-Tq-xjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="126"/>
+        </scene>
+    </scenes>
+</document>

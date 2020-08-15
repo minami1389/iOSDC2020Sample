@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         switch user {
         case let student as StudentUser:
             return [
-                UINavigationController(rootViewController: HomeworkListViewController.get(student: student, teacher: nil)),
+                UINavigationController(rootViewController: HomeworkListViewController.get(student: student, currentUser: student)),
                 UINavigationController(rootViewController: SupportViewController.get())
             ]
         case let teacher as TeacherUser:

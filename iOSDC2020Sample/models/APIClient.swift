@@ -46,7 +46,7 @@ class APIClient {
         }
     }
     
-    func completeHomework(homework: Homework, onSuccess: @escaping () -> Void) {
+    func completeHomework(student: StudentUser, homework: Homework, onSuccess: @escaping () -> Void) {
         let targetHomeworkIndex: Int = homeworks.firstIndex { $0.id == homework.id }!
 
         var targetHomework = homeworks.remove(at: targetHomeworkIndex)

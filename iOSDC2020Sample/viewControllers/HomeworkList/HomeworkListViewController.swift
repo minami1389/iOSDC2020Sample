@@ -13,13 +13,13 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     
     private var student: StudentUser!
-    private var teacher: TeacherUser?
+    private var currentUser: User!
     private var homeworks: [Homework] = []
     
-    static func get(student: StudentUser, teacher: TeacherUser?) -> HomeworkListViewController {
+    static func get(student: StudentUser, currentUser: User) -> HomeworkListViewController {
         let vc = UIStoryboard(name: "HomeworkList", bundle: nil).instantiateInitialViewController() as! HomeworkListViewController
         vc.student = student
-        vc.teacher = teacher
+        vc.currentUser = currentUser
         return vc
     }
     
@@ -28,14 +28,14 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
         
         title = student.name
         
-        if teacher != nil {
+        if currentUser is TeacherUser {
             let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onTapAddButton))
             self.navigationItem.setRightBarButton(addButton, animated: false)
         }
     }
     
     @objc func onTapAddButton() {
-        guard let teacher = teacher else {
+        guard let teacher = currentUser as? TeacherUser else {
             fatalError("先生以外がこのボタンを押すことは出来ません")
         }
         
@@ -69,7 +69,7 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
         tableView.deselectRow(at: indexPath, animated: true)
         
         let homework = homeworks[indexPath.row]
-        let vc = HomeworkDetailViewController.get(homework: homework)
+        let vc = HomeworkDetailViewController.get(homework: homework, currentUser: currentUser)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

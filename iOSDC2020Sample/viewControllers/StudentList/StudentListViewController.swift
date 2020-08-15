@@ -45,7 +45,7 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.deselectRow(at: indexPath, animated: true)
         
         let student = students[indexPath.row]
-        let vc = HomeworkListViewController.get(student: student, teacher: teacher)
+        let vc = HomeworkListViewController.get(student: student, currentUser: teacher)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

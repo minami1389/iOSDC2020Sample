@@ -14,10 +14,12 @@ class HomeworkDetailViewController: UIViewController {
     @IBOutlet weak var completeButton: UIButton!
     
     private var homework: Homework!
+    private var currentUser: User!
     
-    static func get(homework: Homework) -> HomeworkDetailViewController {
+    static func get(homework: Homework, currentUser: User) -> HomeworkDetailViewController {
         let vc = UIStoryboard(name: "HomeworkDetail", bundle: nil).instantiateInitialViewController() as! HomeworkDetailViewController
         vc.homework = homework
+        vc.currentUser = currentUser
         return vc
     }
     
@@ -27,15 +29,15 @@ class HomeworkDetailViewController: UIViewController {
         title = homework.title
         descriptionLabel.text = homework.description
         
-        #if TEACHER
-        completeButton.isHidden = true
-        #elseif STUDENT
-        completeButton.isHidden = false
-        #endif
+        completeButton.isHidden = !(currentUser is StudentUser)
     }
     
     @IBAction func onTapCompleteButton(_ sender: Any) {
-        APIClient.shared.completeHomework(homework: homework) { [unowned self] in
+        guard let student = currentUser as? StudentUser else {
+            fatalError("生徒以外がこのボタンを押すことは出来ません")
+        }
+        
+        APIClient.shared.completeHomework(student: student, homework: homework) { [unowned self] in
             self.navigationController?.popViewController(animated: true)
         }
     }

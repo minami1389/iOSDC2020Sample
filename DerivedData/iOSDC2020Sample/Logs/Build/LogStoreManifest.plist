@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>024754CC-D8BF-4929-B47A-65A42485FAD8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>024754CC-D8BF-4929-B47A-65A42485FAD8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175191.37299299</real>
+			<key>timeStoppedRecording</key>
+			<real>619175193.29605103</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>024754CC-D8BF-4929-B47A-65A42485FAD8</string>
+		</dict>
 		<key>12209DA3-2A05-436C-AD41-C0E495D672B4</key>
 		<dict>
 			<key>className</key>
@@ -175,6 +209,40 @@
 			<string>Build iOSDC2020Sample-Student</string>
 			<key>uniqueIdentifier</key>
 			<string>25F22D4E-3FF8-4A9D-9381-D82826EECE5C</string>
+		</dict>
+		<key>28B23298-4D85-4B5F-8464-11C512B66522</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>28B23298-4D85-4B5F-8464-11C512B66522.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175111.60193205</real>
+			<key>timeStoppedRecording</key>
+			<real>619175112.085307</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>28B23298-4D85-4B5F-8464-11C512B66522</string>
 		</dict>
 		<key>28D92B9F-3944-4664-8C57-AED5109A0167</key>
 		<dict>
@@ -584,6 +652,40 @@
 			<key>uniqueIdentifier</key>
 			<string>4AFC42F8-23FA-4799-8297-B5309D72163B</string>
 		</dict>
+		<key>527999CE-B4CC-4052-AD8A-AC27AEAC0A02</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>527999CE-B4CC-4052-AD8A-AC27AEAC0A02.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175172.88211203</real>
+			<key>timeStoppedRecording</key>
+			<real>619175173.38363302</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>527999CE-B4CC-4052-AD8A-AC27AEAC0A02</string>
+		</dict>
 		<key>57682C33-B01B-4CF0-AF02-FA3D69F728B7</key>
 		<dict>
 			<key>className</key>
@@ -720,6 +822,74 @@
 			<key>uniqueIdentifier</key>
 			<string>65ABFFD3-AD5E-4703-ACF5-17E76306A732</string>
 		</dict>
+		<key>702D4620-D968-4D53-9486-3280F7803D4B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>702D4620-D968-4D53-9486-3280F7803D4B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175086.42211294</real>
+			<key>timeStoppedRecording</key>
+			<real>619175086.91486204</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>702D4620-D968-4D53-9486-3280F7803D4B</string>
+		</dict>
+		<key>722A2A0C-7E7D-4E0E-9D48-CD1798737B6C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>722A2A0C-7E7D-4E0E-9D48-CD1798737B6C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175156.75606203</real>
+			<key>timeStoppedRecording</key>
+			<real>619175157.27596402</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>722A2A0C-7E7D-4E0E-9D48-CD1798737B6C</string>
+		</dict>
 		<key>78BF90F4-575D-468A-A8EE-C30A519EA96F</key>
 		<dict>
 			<key>className</key>
@@ -788,6 +958,40 @@
 			<key>uniqueIdentifier</key>
 			<string>78E42513-3766-4055-A493-AA76477344E1</string>
 		</dict>
+		<key>85137B99-2E52-4CEB-B6B7-6750CB56484C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>85137B99-2E52-4CEB-B6B7-6750CB56484C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175200.55900502</real>
+			<key>timeStoppedRecording</key>
+			<real>619175200.59899199</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>85137B99-2E52-4CEB-B6B7-6750CB56484C</string>
+		</dict>
 		<key>863B28D8-8095-42FF-80E2-B8934693C766</key>
 		<dict>
 			<key>className</key>
@@ -855,6 +1059,40 @@
 			<string>Build iOSDC2020Sample-Teacher</string>
 			<key>uniqueIdentifier</key>
 			<string>8D06FEF0-2FBA-4983-ACE8-5938E88FC718</string>
+		</dict>
+		<key>90964C6E-F2B3-46A9-A27E-CFB3CA8D06AE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>90964C6E-F2B3-46A9-A27E-CFB3CA8D06AE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619174981.08068395</real>
+			<key>timeStoppedRecording</key>
+			<real>619174982.01177001</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>90964C6E-F2B3-46A9-A27E-CFB3CA8D06AE</string>
 		</dict>
 		<key>97042FE3-BC09-4C90-BB7B-373721570847</key>
 		<dict>
@@ -992,6 +1230,74 @@
 			<key>uniqueIdentifier</key>
 			<string>AE98E911-C35E-4E4C-9DBB-B3B612A0A361</string>
 		</dict>
+		<key>B0037A43-DD0A-40EB-9265-1BF6E4DF7F2D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B0037A43-DD0A-40EB-9265-1BF6E4DF7F2D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175160.42491901</real>
+			<key>timeStoppedRecording</key>
+			<real>619175160.93843997</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>B0037A43-DD0A-40EB-9265-1BF6E4DF7F2D</string>
+		</dict>
+		<key>B02D5B5A-CFEA-4060-AD4B-6D56F968AA05</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B02D5B5A-CFEA-4060-AD4B-6D56F968AA05.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175306.72035694</real>
+			<key>timeStoppedRecording</key>
+			<real>619175307.96960497</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>B02D5B5A-CFEA-4060-AD4B-6D56F968AA05</string>
+		</dict>
 		<key>B40BC06A-F93C-41A7-9238-AEF8B632E896</key>
 		<dict>
 			<key>className</key>
@@ -1128,6 +1434,40 @@
 			<key>uniqueIdentifier</key>
 			<string>B731BB5A-8F07-4D55-BF5B-47CDDB0B71FC</string>
 		</dict>
+		<key>BCE299FB-8FD5-4CD2-964A-40EC83284886</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BCE299FB-8FD5-4CD2-964A-40EC83284886.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175116.33173501</real>
+			<key>timeStoppedRecording</key>
+			<real>619175116.846663</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>BCE299FB-8FD5-4CD2-964A-40EC83284886</string>
+		</dict>
 		<key>C4B56335-F3C7-4B2B-A744-8BF94D9235C5</key>
 		<dict>
 			<key>className</key>
@@ -1195,6 +1535,40 @@
 			<string>Build iOSDC2020Sample-Teacher</string>
 			<key>uniqueIdentifier</key>
 			<string>C9C9E3D1-25A5-4E93-9EC4-745FF2693CCE</string>
+		</dict>
+		<key>CB3FE615-982B-42D5-932D-2520CBB5657E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CB3FE615-982B-42D5-932D-2520CBB5657E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175103.10687196</real>
+			<key>timeStoppedRecording</key>
+			<real>619175103.60453105</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>CB3FE615-982B-42D5-932D-2520CBB5657E</string>
 		</dict>
 		<key>CC0DA825-F08A-4594-8566-7A4561F5E041</key>
 		<dict>
@@ -1433,6 +1807,108 @@
 			<string>Build iOSDC2020Sample-Teacher</string>
 			<key>uniqueIdentifier</key>
 			<string>E31A0D38-CDE7-40D7-A378-FE1098EFBCC4</string>
+		</dict>
+		<key>E37E4FC3-94A2-435B-B68D-F59B2D0E4DDF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E37E4FC3-94A2-435B-B68D-F59B2D0E4DDF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175206.41425705</real>
+			<key>timeStoppedRecording</key>
+			<real>619175206.89750695</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>E37E4FC3-94A2-435B-B68D-F59B2D0E4DDF</string>
+		</dict>
+		<key>E3F15768-9409-43DB-8115-08455B17AC89</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E3F15768-9409-43DB-8115-08455B17AC89.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175312.04519498</real>
+			<key>timeStoppedRecording</key>
+			<real>619175312.14632404</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>E3F15768-9409-43DB-8115-08455B17AC89</string>
+		</dict>
+		<key>E58DD566-BAFF-4BB7-8512-09178F34B4D8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E58DD566-BAFF-4BB7-8512-09178F34B4D8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619175076.05672097</real>
+			<key>timeStoppedRecording</key>
+			<real>619175077.15007102</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>E58DD566-BAFF-4BB7-8512-09178F34B4D8</string>
 		</dict>
 		<key>EAA4A3CE-BEAF-4A01-BE77-AAA8AA4A1D43</key>
 		<dict>

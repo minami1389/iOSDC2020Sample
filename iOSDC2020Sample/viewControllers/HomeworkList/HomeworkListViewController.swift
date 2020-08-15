@@ -13,11 +13,13 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     
     private var student: StudentUser!
+    private var teacher: TeacherUser?
     private var homeworks: [Homework] = []
     
-    static func get(student: StudentUser) -> HomeworkListViewController {
+    static func get(student: StudentUser, teacher: TeacherUser?) -> HomeworkListViewController {
         let vc = UIStoryboard(name: "HomeworkList", bundle: nil).instantiateInitialViewController() as! HomeworkListViewController
         vc.student = student
+        vc.teacher = teacher
         return vc
     }
     
@@ -26,14 +28,18 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
         
         title = student.name
         
-        #if TEACHER
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onTapAddButton))
-        self.navigationItem.setRightBarButton(addButton, animated: false)
-        #endif
+        if teacher != nil {
+            let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onTapAddButton))
+            self.navigationItem.setRightBarButton(addButton, animated: false)
+        }
     }
     
     @objc func onTapAddButton() {
-        let vc = CreateHomeworkViewController.get(student: student)
+        guard let teacher = teacher else {
+            fatalError("先生以外がこのボタンを押すことは出来ません")
+        }
+        
+        let vc = CreateHomeworkViewController.get(student: student, teacher: teacher)
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }

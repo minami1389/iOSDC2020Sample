@@ -16,7 +16,7 @@ class CreateHomeworkViewController: UIViewController {
     
     private var student: User!
     
-    static func get(student: User) -> UIViewController {
+    static func get(student: User, teacher: TeacherUser) -> UIViewController {
         let vc = UIStoryboard(name: "CreateHomework", bundle: nil).instantiateInitialViewController() as! CreateHomeworkViewController
         vc.student = student
         return UINavigationController(rootViewController: vc)

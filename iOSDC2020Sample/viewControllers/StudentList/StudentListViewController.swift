@@ -13,9 +13,12 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var tableView: UITableView!
     
     private var students: [StudentUser] = []
+    private var teacher: TeacherUser!
     
     static func get(teacher: TeacherUser) -> StudentListViewController {
-        return UIStoryboard(name: "StudentList", bundle: nil).instantiateInitialViewController() as! StudentListViewController
+        let vc = UIStoryboard(name: "StudentList", bundle: nil).instantiateInitialViewController() as! StudentListViewController
+        vc.teacher = teacher
+        return vc
     }
     
     override func viewDidLoad() {
@@ -42,7 +45,7 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.deselectRow(at: indexPath, animated: true)
         
         let student = students[indexPath.row]
-        let vc = HomeworkListViewController.get(student: student)
+        let vc = HomeworkListViewController.get(student: student, teacher: teacher)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

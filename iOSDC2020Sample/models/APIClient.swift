@@ -59,7 +59,7 @@ class APIClient {
         }
     }
     
-    func addHomework(for student: User, title: String, description: String, onSuccess: @escaping () -> Void) {
+    func addHomework(for student: StudentUser, teacher: TeacherUser, title: String, description: String, onSuccess: @escaping () -> Void) {
         let homework = Homework(
             id: UUID().uuidString,
             studentId: student.id,

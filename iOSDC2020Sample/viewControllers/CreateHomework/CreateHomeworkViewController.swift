@@ -14,11 +14,13 @@ class CreateHomeworkViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     
-    private var student: User!
+    private var student: StudentUser!
+    private var teacher: TeacherUser!
     
-    static func get(student: User, teacher: TeacherUser) -> UIViewController {
+    static func get(student: StudentUser, teacher: TeacherUser) -> UIViewController {
         let vc = UIStoryboard(name: "CreateHomework", bundle: nil).instantiateInitialViewController() as! CreateHomeworkViewController
         vc.student = student
+        vc.teacher = teacher
         return UINavigationController(rootViewController: vc)
     }
     
@@ -40,7 +42,7 @@ class CreateHomeworkViewController: UIViewController {
             return
         }
         
-        APIClient.shared.addHomework(for: student, title: title, description: description) { [unowned self] in
+        APIClient.shared.addHomework(for: student, teacher: teacher, title: title, description: description) { [unowned self] in
             self.dismiss(animated: true, completion: nil)
         }
     }

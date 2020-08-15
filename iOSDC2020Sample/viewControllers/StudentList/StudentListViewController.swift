@@ -12,9 +12,9 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var students: [User] = []
+    private var students: [StudentUser] = []
     
-    static func get() -> StudentListViewController {
+    static func get(teacher: TeacherUser) -> StudentListViewController {
         return UIStoryboard(name: "StudentList", bundle: nil).instantiateInitialViewController() as! StudentListViewController
     }
     

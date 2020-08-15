@@ -13,11 +13,11 @@ class APIClient {
     private init() {}
     
     private let students = [
-        User(id: "1", name: "花子"),
-        User(id: "2", name: "太郎"),
-        User(id: "3", name: "桃子"),
-        User(id: "4", name: "次郎"),
-        User(id: "5", name: "梅子")
+        StudentUser(id: "1", name: "花子"),
+        StudentUser(id: "2", name: "太郎"),
+        StudentUser(id: "3", name: "桃子"),
+        StudentUser(id: "4", name: "次郎"),
+        StudentUser(id: "5", name: "梅子")
     ]
     
     private var homeworks: [Homework] = [
@@ -33,7 +33,7 @@ class APIClient {
         }
     }
     
-    func fetchStudents(onSuccess: @escaping ([User]) -> Void) {
+    func fetchStudents(onSuccess: @escaping ([StudentUser]) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [unowned self] in
             onSuccess(self.students)
         }

@@ -12,10 +12,10 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var student: User!
+    private var student: StudentUser!
     private var homeworks: [Homework] = []
     
-    static func get(student: User) -> HomeworkListViewController {
+    static func get(student: StudentUser) -> HomeworkListViewController {
         let vc = UIStoryboard(name: "HomeworkList", bundle: nil).instantiateInitialViewController() as! HomeworkListViewController
         vc.student = student
         return vc

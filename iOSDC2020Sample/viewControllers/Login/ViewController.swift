@@ -36,17 +36,21 @@ class ViewController: UIViewController {
     }
     
     private func getViewControllers(user: User) -> [UIViewController] {
-        #if STUDENT
-        return [
-            UINavigationController(rootViewController: HomeworkListViewController.get(student: user)),
-            UINavigationController(rootViewController: SupportViewController.get())
-        ]
-        #elseif TEACHER
-        return [
-            UINavigationController(rootViewController: StudentListViewController.get()),
-            UINavigationController(rootViewController: SupportViewController.get())
-        ]
-        #endif
+        switch user {
+        case let student as StudentUser:
+            return [
+                UINavigationController(rootViewController: HomeworkListViewController.get(student: student)),
+                UINavigationController(rootViewController: SupportViewController.get())
+            ]
+        case let teacher as TeacherUser:
+            return [
+                UINavigationController(rootViewController: StudentListViewController.get(teacher: teacher)),
+                UINavigationController(rootViewController: SupportViewController.get())
+            ]
+        default:
+            fatalError("")
+        }
+        
     }
     
 }

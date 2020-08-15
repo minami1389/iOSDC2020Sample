@@ -26,6 +26,12 @@ class HomeworkDetailViewController: UIViewController {
 
         title = homework.title
         descriptionLabel.text = homework.description
+        
+        #if TEACHER
+        completeButton.isHidden = true
+        #elseif STUDENT
+        completeButton.isHidden = false
+        #endif
     }
     
     @IBAction func onTapCompleteButton(_ sender: Any) {

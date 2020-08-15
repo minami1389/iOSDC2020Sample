@@ -23,16 +23,30 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTapLoginButton(_ sender: Any) {
-        let viewControllers: [UIViewController] = [
+        APIClient.shared.login { [unowned self] (user) in
+            let viewControllers = self.getViewControllers(user: user)
+            
+            let tabBarController = UITabBarController()
+            tabBarController.setViewControllers(viewControllers, animated: false)
+            tabBarController.modalPresentationStyle = .fullScreen
+            
+            self.present(tabBarController, animated: true, completion: nil)
+        }
+        
+    }
+    
+    private func getViewControllers(user: User) -> [UIViewController] {
+        #if STUDENT
+        return [
+            UINavigationController(rootViewController: HomeworkListViewController.get(student: user)),
+            UINavigationController(rootViewController: SupportViewController.get())
+        ]
+        #elseif TEACHER
+        return [
             UINavigationController(rootViewController: StudentListViewController.get()),
             UINavigationController(rootViewController: SupportViewController.get())
         ]
-        
-        let tabBarController = UITabBarController()
-        tabBarController.setViewControllers(viewControllers, animated: false)
-        tabBarController.modalPresentationStyle = .fullScreen
-        
-        present(tabBarController, animated: true, completion: nil)
+        #endif
     }
     
 }

@@ -18,7 +18,7 @@
 		06002AC624E18DA80085AD13 /* HomeworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06002AC524E18DA80085AD13 /* HomeworkDetailViewController.swift */; };
 		06002AC824E18DB10085AD13 /* HomeworkDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06002AC724E18DB10085AD13 /* HomeworkDetail.storyboard */; };
 		06002ACA24E2D92C0085AD13 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06002AC924E2D92C0085AD13 /* APIClient.swift */; };
-		06002ACE24E2DA6D0085AD13 /* StudentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06002ACD24E2DA6D0085AD13 /* StudentUser.swift */; };
+		06002ACE24E2DA6D0085AD13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06002ACD24E2DA6D0085AD13 /* User.swift */; };
 		06A0432F24E7CF6500F36385 /* Info-Student.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06A0432D24E7CF6500F36385 /* Info-Student.plist */; };
 		06A0433024E7CF6500F36385 /* Info-Teacher.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06A0432E24E7CF6500F36385 /* Info-Teacher.plist */; };
 		06D4F1D524CCAD4C00AC922C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D4F1D424CCAD4C00AC922C /* AppDelegate.swift */; };
@@ -43,7 +43,7 @@
 		06002AC524E18DA80085AD13 /* HomeworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkDetailViewController.swift; sourceTree = "<group>"; };
 		06002AC724E18DB10085AD13 /* HomeworkDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeworkDetail.storyboard; sourceTree = "<group>"; };
 		06002AC924E2D92C0085AD13 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		06002ACD24E2DA6D0085AD13 /* StudentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentUser.swift; sourceTree = "<group>"; };
+		06002ACD24E2DA6D0085AD13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		06A0432D24E7CF6500F36385 /* Info-Student.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Student.plist"; sourceTree = "<group>"; };
 		06A0432E24E7CF6500F36385 /* Info-Teacher.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Teacher.plist"; sourceTree = "<group>"; };
 		06D4F1D124CCAD4C00AC922C /* iOSDC2020Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDC2020Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				06002AC924E2D92C0085AD13 /* APIClient.swift */,
-				06002ACD24E2DA6D0085AD13 /* StudentUser.swift */,
+				06002ACD24E2DA6D0085AD13 /* User.swift */,
 				06F5B69D24E7BC86003D8537 /* Homework.swift */,
 				06F5B69F24E7C493003D8537 /* SupportMenu.swift */,
 			);
@@ -266,7 +266,7 @@
 				06D4F1D524CCAD4C00AC922C /* AppDelegate.swift in Sources */,
 				06D4F1D724CCAD4C00AC922C /* SceneDelegate.swift in Sources */,
 				06F5B6A024E7C493003D8537 /* SupportMenu.swift in Sources */,
-				06002ACE24E2DA6D0085AD13 /* StudentUser.swift in Sources */,
+				06002ACE24E2DA6D0085AD13 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

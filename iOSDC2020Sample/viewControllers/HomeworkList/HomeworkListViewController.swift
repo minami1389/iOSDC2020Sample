@@ -12,10 +12,10 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var student: StudentUser!
+    private var student: User!
     private var homeworks: [Homework] = []
     
-    static func get(student: StudentUser) -> HomeworkListViewController {
+    static func get(student: User) -> HomeworkListViewController {
         let vc = UIStoryboard(name: "HomeworkList", bundle: nil).instantiateInitialViewController() as! HomeworkListViewController
         vc.student = student
         return vc
@@ -26,8 +26,10 @@ class HomeworkListViewController: UIViewController, UITableViewDataSource, UITab
         
         title = student.name
         
+        #if TEACHER
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onTapAddButton))
         self.navigationItem.setRightBarButton(addButton, animated: false)
+        #endif
     }
     
     @objc func onTapAddButton() {

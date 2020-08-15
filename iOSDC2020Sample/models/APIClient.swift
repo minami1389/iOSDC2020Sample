@@ -13,11 +13,11 @@ class APIClient {
     private init() {}
     
     private let students = [
-        StudentUser(id: "1", name: "花子"),
-        StudentUser(id: "2", name: "太郎"),
-        StudentUser(id: "3", name: "桃子"),
-        StudentUser(id: "4", name: "次郎"),
-        StudentUser(id: "5", name: "梅子")
+        User(id: "1", name: "花子"),
+        User(id: "2", name: "太郎"),
+        User(id: "3", name: "桃子"),
+        User(id: "4", name: "次郎"),
+        User(id: "5", name: "梅子")
     ]
     
     private var homeworks: [Homework] = [
@@ -27,14 +27,19 @@ class APIClient {
         Homework(id: UUID().uuidString, studentId: "1", title: "計算練習②", description: "計算の練習をしましょう", isCompleted: false)
     ]
     
+    func login(onSuccess: @escaping (User) -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [unowned self] in
+            onSuccess(self.students.first!)
+        }
+    }
     
-    func fetchStudents(onSuccess: @escaping ([StudentUser]) -> Void) {
+    func fetchStudents(onSuccess: @escaping ([User]) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [unowned self] in
             onSuccess(self.students)
         }
     }
     
-    func fetchHomeworks(for student: StudentUser, onSuccess: @escaping ([Homework]) -> Void) {
+    func fetchHomeworks(for student: User, onSuccess: @escaping ([Homework]) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [unowned self] in
             let filteredHomeworks = self.homeworks.filter { $0.studentId == student.id }
             onSuccess(filteredHomeworks)
@@ -54,7 +59,7 @@ class APIClient {
         }
     }
     
-    func addHomework(for student: StudentUser, title: String, description: String, onSuccess: @escaping () -> Void) {
+    func addHomework(for student: User, title: String, description: String, onSuccess: @escaping () -> Void) {
         let homework = Homework(
             id: UUID().uuidString,
             studentId: student.id,

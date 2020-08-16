@@ -29,7 +29,13 @@ class APIClient {
     
     func login(onSuccess: @escaping (User) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [unowned self] in
-            onSuccess(self.students.first!)
+            switch UserType.current {
+                case .student:
+                    onSuccess(self.students.first!)
+                case .teacher:
+                onSuccess(TeacherUser(id: "1", name: "小林"))
+            }
+            
         }
     }
     

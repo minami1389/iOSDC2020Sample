@@ -210,6 +210,40 @@
 			<key>uniqueIdentifier</key>
 			<string>1D93D50D-0DCC-427F-9DC4-3B69490BF344</string>
 		</dict>
+		<key>1E4847D3-5D03-466C-8AD6-6A256870614E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1E4847D3-5D03-466C-8AD6-6A256870614E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619210684.82669604</real>
+			<key>timeStoppedRecording</key>
+			<real>619210687.54301202</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>1E4847D3-5D03-466C-8AD6-6A256870614E</string>
+		</dict>
 		<key>1EAC75D7-B655-4F6A-A446-1493463DFCD9</key>
 		<dict>
 			<key>className</key>
@@ -516,6 +550,40 @@
 			<key>uniqueIdentifier</key>
 			<string>32017801-0AD6-403F-BB2A-56CF80DE8BF3</string>
 		</dict>
+		<key>3368412E-604D-4C04-90DC-56FD0096F112</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3368412E-604D-4C04-90DC-56FD0096F112.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619208336.17157996</real>
+			<key>timeStoppedRecording</key>
+			<real>619208336.25897098</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>3368412E-604D-4C04-90DC-56FD0096F112</string>
+		</dict>
 		<key>344B0222-813D-4E58-AB68-24F26AA65F16</key>
 		<dict>
 			<key>className</key>
@@ -651,6 +719,40 @@
 			<string>Build iOSDC2020Sample-Teacher</string>
 			<key>uniqueIdentifier</key>
 			<string>37F32291-6548-47BC-8C63-C3F25AD9C1C1</string>
+		</dict>
+		<key>3B04B2BD-7B7C-4667-BF72-62A10A73F789</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3B04B2BD-7B7C-4667-BF72-62A10A73F789.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>iOSDC2020Sample project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>iOSDC2020Sample-Teacher</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>timeStartedRecording</key>
+			<real>619210810.77871096</real>
+			<key>timeStoppedRecording</key>
+			<real>619210812.42102802</real>
+			<key>title</key>
+			<string>Build iOSDC2020Sample-Teacher</string>
+			<key>uniqueIdentifier</key>
+			<string>3B04B2BD-7B7C-4667-BF72-62A10A73F789</string>
 		</dict>
 		<key>3BFF5131-8198-4910-BF49-625D0B8D7DCA</key>
 		<dict>

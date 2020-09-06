@@ -7,15 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--課題一覧-->
+        <!--宿題一覧-->
         <scene sceneID="oBZ-WG-Lnj">
             <objects>
-                <viewController title="課題一覧" id="HTO-iC-kdR" customClass="HomeworkListViewController" customModule="iOSDC2020Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="宿題一覧" id="HTO-iC-kdR" customClass="HomeworkListViewController" customModule="iOSDC2020Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TFy-Hi-oYa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iob-EO-vua">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iob-EO-vua">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="50" id="joD-zz-Ib0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="課題作成">
+                                <state key="normal" title="宿題作成">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -49,7 +49,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onTapAddButton:" destination="HTO-iC-kdR" eventType="touchUpInside" id="ghj-2s-qa8"/>
+                                    <action selector="onTapCreateHomeworkButton:" destination="HTO-iC-kdR" eventType="touchUpInside" id="DGi-pF-cI7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,7 +66,7 @@
                         <viewLayoutGuide key="safeArea" id="UXc-tY-GLq"/>
                     </view>
                     <connections>
-                        <outlet property="addHomeworkButton" destination="65W-jm-75f" id="6dt-ja-lh3"/>
+                        <outlet property="createHomeworkButton" destination="65W-jm-75f" id="nZc-HO-WJH"/>
                         <outlet property="tableView" destination="iob-EO-vua" id="u4z-51-7A4"/>
                     </connections>
                 </viewController>

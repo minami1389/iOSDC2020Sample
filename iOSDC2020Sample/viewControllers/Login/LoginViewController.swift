@@ -11,17 +11,22 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBAction func onTapLoginButton(_ sender: Any) {
-        APIClient.shared.login { [unowned self] in
-            #if STUDENT
-            let viewControllers = [
-                HomeworkListViewController.get()
-            ]
-            #elseif TEACHER
-            let viewControllers = [
-                HomeworkListViewController.get(),
-                StudentListViewController.get()
-            ]
-            #endif
+        APIClient.shared.login { [unowned self] (currentAccount) in
+            let viewControllers = { () -> [UIViewController] in
+                switch currentAccount {
+                case let currentAccount as StudentAccount:
+                    return [
+                        HomeworkListViewController.get(currentAccount: currentAccount)
+                    ]
+                case let currentAccount as TeacherAccount:
+                    return [
+                        StudentListViewController.get(currentAccount: currentAccount),
+                        HomeworkListViewController.get(currentAccount: currentAccount)
+                    ]
+                default:
+                    fatalError("")
+                }
+            }()
             
             let tabCon = UITabBarController()
             tabCon.setViewControllers(viewControllers, animated: false)

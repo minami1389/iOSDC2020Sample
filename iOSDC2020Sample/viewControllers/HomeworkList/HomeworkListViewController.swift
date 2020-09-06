@@ -10,28 +10,33 @@ import UIKit
 
 class HomeworkListViewController: UIViewController {
     
-    @IBOutlet weak var addHomeworkButton: UIButton!
+    @IBOutlet weak var createHomeworkButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     private var homeworks: [Homework] = []
     
-    static func get() -> UIViewController {
-        let vc = UIStoryboard(name: "HomeworkList", bundle: nil).instantiateInitialViewController() as! HomeworkListViewController
+    private var currentAccount: Account!
+    
+    static func get(currentAccount: Account) -> UIViewController {
+        let vc = UIStoryboard(name: "HomeworkList", bundle: nil)
+            .instantiateInitialViewController() as! HomeworkListViewController
+        vc.currentAccount = currentAccount
         return UINavigationController(rootViewController: vc)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         #if STUDENT
-        addHomeworkButton.isHidden = true
+        createHomeworkButton.isHidden = true
         #endif
     }
     
-    @IBAction func onTapAddButton(_ sender: Any) {
-        let vc = CreateHomeworkViewController.get()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+    @IBAction func onTapCreateHomeworkButton(_ sender: Any) {
+        if let currentAccount = currentAccount as? TeacherAccount {
+            let vc = CreateHomeworkViewController.get(currentAccount: currentAccount)
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -13,10 +13,21 @@ class StudentListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var students: [Student] = []
+    private var currentAccount: TeacherAccount!
     
-    static func get() -> UIViewController {
-        let vc = UIStoryboard(name: "StudentList", bundle: nil).instantiateInitialViewController() as! StudentListViewController
+    static func get(currentAccount: TeacherAccount) -> UIViewController {
+        let vc = UIStoryboard(name: "StudentList", bundle: nil)
+            .instantiateInitialViewController() as! StudentListViewController
+        vc.currentAccount = currentAccount
         return UINavigationController(rootViewController: vc)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        #if STUDENT
+        fatalError("生徒アプリではこの画面に遷移してはならない")
+        #endif
     }
     
     override func viewWillAppear(_ animated: Bool) {

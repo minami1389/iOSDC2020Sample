@@ -24,6 +24,7 @@
 		06D4F1E124CCAD4E00AC922C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06D4F1DF24CCAD4E00AC922C /* LaunchScreen.storyboard */; };
 		06F5B69E24E7BC86003D8537 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F5B69D24E7BC86003D8537 /* Homework.swift */; };
 		06F874942504ABC60009A4CE /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F874932504ABC60009A4CE /* Student.swift */; };
+		06F874962504BD4F0009A4CE /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F874952504BD4F0009A4CE /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		06D4F1E024CCAD4E00AC922C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06F5B69D24E7BC86003D8537 /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
 		06F874932504ABC60009A4CE /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		06F874952504BD4F0009A4CE /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				06002AC924E2D92C0085AD13 /* APIClient.swift */,
 				06F874932504ABC60009A4CE /* Student.swift */,
+				06F874952504BD4F0009A4CE /* Account.swift */,
 				06F5B69D24E7BC86003D8537 /* Homework.swift */,
 			);
 			path = models;
@@ -227,6 +230,7 @@
 				06002ACA24E2D92C0085AD13 /* APIClient.swift in Sources */,
 				06D4F1D924CCAD4C00AC922C /* LoginViewController.swift in Sources */,
 				06F5B69E24E7BC86003D8537 /* Homework.swift in Sources */,
+				06F874962504BD4F0009A4CE /* Account.swift in Sources */,
 				06002AC424E18DA20085AD13 /* HomeworkListViewController.swift in Sources */,
 				06D4F1D524CCAD4C00AC922C /* AppDelegate.swift in Sources */,
 				06F874942504ABC60009A4CE /* Student.swift in Sources */,

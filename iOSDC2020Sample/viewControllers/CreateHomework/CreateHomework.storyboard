@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--課題作成-->
+        <!--宿題作成-->
         <scene sceneID="kFi-gn-hJR">
             <objects>
-                <viewController title="課題作成" id="tHO-0n-nEe" customClass="CreateHomeworkViewController" customModule="iOSDC2020Sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="宿題作成" id="tHO-0n-nEe" customClass="CreateHomeworkViewController" customModule="iOSDC2020Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hFf-Eo-tHC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,9 +22,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4l-8O-ZFz">
                                 <rect key="frame" x="191.5" y="128" width="31" height="30"/>
-                                <state key="normal" title="追加"/>
+                                <state key="normal" title="保存"/>
                                 <connections>
-                                    <action selector="onTapAddButton:" destination="tHO-0n-nEe" eventType="touchUpInside" id="Rrr-Pp-xjO"/>
+                                    <action selector="onTapSaveButton:" destination="tHO-0n-nEe" eventType="touchUpInside" id="3Rt-Zy-IiN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,7 +39,6 @@
                         <viewLayoutGuide key="safeArea" id="9II-kq-3Uk"/>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="a4l-8O-ZFz" id="Oei-4e-QMb"/>
                         <outlet property="titleTextField" destination="dbO-ig-JZE" id="zI1-do-laF"/>
                     </connections>
                 </viewController>

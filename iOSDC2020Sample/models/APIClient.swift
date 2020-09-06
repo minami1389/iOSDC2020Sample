@@ -27,8 +27,12 @@ class APIClient {
         Homework(title: "計算練習②")
     ]
     
-    func login(onSuccess: @escaping () -> Void) {
-        onSuccess()
+    func login(onSuccess: @escaping (Account) -> Void) {
+        #if STUDENT
+        onSuccess(StudentAccount())
+        #elseif TEACHER
+        onSuccess(TeacherAccount())
+        #endif
     }
     
     func fetchStudents(onSuccess: @escaping ([Student]) -> Void) {
@@ -39,8 +43,12 @@ class APIClient {
         onSuccess(self.homeworks)
     }
     
-    func addHomework(title: String, onSuccess: @escaping () -> Void) {
-        self.homeworks.append(Homework(title: title))
+    func createHomework(
+        account: TeacherAccount,
+        title: String,
+        onSuccess: @escaping () -> Void
+    ) {
+        // APIを呼び出す
         onSuccess()
     }
 }

@@ -11,24 +11,16 @@ import UIKit
 class CreateHomeworkViewController: UIViewController {
 
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     
-    private var student: StudentUser!
-    private var teacher: TeacherUser!
-    
-    static func get(student: StudentUser, teacher: TeacherUser) -> UIViewController {
+    static func get() -> UIViewController {
         let vc = UIStoryboard(name: "CreateHomework", bundle: nil).instantiateInitialViewController() as! CreateHomeworkViewController
-        vc.student = student
-        vc.teacher = teacher
         return UINavigationController(rootViewController: vc)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "\(student.name)さんへの課題作成"
-        
         let closeButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(onTapCloseButton))
         self.navigationItem.setLeftBarButton(closeButton, animated: true)
     }
@@ -38,11 +30,7 @@ class CreateHomeworkViewController: UIViewController {
     }
     
     @IBAction func onTapAddButton(_ sender: Any) {
-        guard let title = titleTextField.text, let description = descriptionTextField.text else {
-            return
-        }
-        
-        APIClient.shared.addHomework(for: student, teacher: teacher, title: title, description: description) { [unowned self] in
+        APIClient.shared.addHomework(title: titleTextField.text!) { [unowned self] in
             self.dismiss(animated: true, completion: nil)
         }
     }

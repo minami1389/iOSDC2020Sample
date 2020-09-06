@@ -8,21 +8,19 @@
 
 import UIKit
 
-class StudentListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class StudentListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var students: [StudentUser] = []
-    private var teacher: TeacherUser!
+    private var students: [Student] = []
     
-    static func get(teacher: TeacherUser) -> StudentListViewController {
+    static func get() -> UIViewController {
         let vc = UIStoryboard(name: "StudentList", bundle: nil).instantiateInitialViewController() as! StudentListViewController
-        vc.teacher = teacher
-        return vc
+        return UINavigationController(rootViewController: vc)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         APIClient.shared.fetchStudents { [unowned self] (students) in
             self.students = students
@@ -30,6 +28,9 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         }
     }
     
+}
+
+extension StudentListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return students.count
     }
@@ -40,13 +41,4 @@ class StudentListViewController: UIViewController, UITableViewDataSource, UITabl
         cell.textLabel?.text = student.name
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        let student = students[indexPath.row]
-        let vc = HomeworkListViewController.get(student: student, currentUser: teacher)
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-
 }
